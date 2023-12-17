@@ -15,9 +15,9 @@ class TriangleTestCase(unittest.TestCase):
     def test_perimeter(self):
         res = perimeter(2, 3, 5)
         self.assertEqual(res, 10)
-    # def test_zero_perimeter(self):
-    #     res = perimeter(0, 3, 5)
-    #     self.assertEqual(res, 'incorrect input')
+    def test_zero_perimeter(self):
+        res = perimeter(0, 3, 5)
+        self.assertRaises(Exception, res, 'incorrect input')
     def test_float_perimeter(self):
         res = perimeter(3.2, 11.1, 1.2)
         self.assertEqual(res, 15.5)
