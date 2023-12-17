@@ -17,3 +17,9 @@ jobs:
 
       - name: Run circle_test
         run: python -m unittest test_circle.py
+      - name: Run rectangle_test
+        run: python -m unittest test_rectangle.py
+      - name: Run square_test
+        run: python -m unittest test_square.py
+      - name: Run triangle_test
+        run: python -m unittest test_triangle.py
